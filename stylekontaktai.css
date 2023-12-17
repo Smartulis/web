@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+  background-image: url('assets/background.png');
+  background-size: cover;
+}
+
+.line{
+width: 60%;
+ height: 2px;
+ background-color: black;
+ margin-bottom: 10%;
+ justify-content: center;
+ align-items: center;
+ margin-left: auto;
+ margin-right: auto;
+ border-color: black;
+}
+
+.linefooter{
+  width: 90%;
+ height: 2px;
+ background-color: black;
+ margin-top: 10%;
+ justify-content: center;
+ align-items: center;
+ margin-left: auto;
+ margin-right: auto;
+ border-color: black;
+}
+
+/*NAVBAR*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7C8A9A;
+  padding-right: 5%;
+  position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: white;
+  cursor: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  color: black;
+  padding: 3%;
+}
+
+.navbar .nav-link:hover {
+  color: #0071B5;
+}
+
+.logo{
+  width: 10%;
+  height: auto;
+}
+
+.darbai{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px; /* Set your desired font size */
+    padding: 1%; /* Adjust padding as needed */
+    font-family: 'Lato', sans-serif;
+}
+
+ .kontakts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:15%;
+    margin-bottom:2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+  }
+
+  .prasymas{
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:10%;
+    margin-bottom:3%;
+  }
+  
+.vardas, .pastas, .telefono, .zinute {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:10%;
+    margin-top:2%;
+  }
+
+  .vardaslabel{
+    padding:20px;
+    width: 80%;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+ }
+ 
+ .pastaslabel{
+    padding:20px;
+    width: 80%;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+ }
+
+ .telefonolabel{
+    padding:20px;
+    width: 80%;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+ }
+
+ .zinutelabel {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    height: 300px;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+}
+
+.button3{
+  width: 200px;
+  height: 91px;
+  background: #CCCCCC;
+  border-radius: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-left: 79%;
+  margin-top: 2%;
+  cursor: none;
+}
+
+.button3:hover {
+  background-color: #BBBBBB;
+  color: #0071B5;
+  }
+
+  .footer{
+    font-size: 20px;
+    font-family: 'inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:1%;
+    padding-bottom:1%;
+ }
+
+
+.custom-cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.site-wide {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.site-wide .pointer {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: black;
+	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+.site-wide.active .pointer {
+	width: 20px;
+	height: 20px;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+  
+  .logo{
+    width: 20%;
+    height: auto;
+  }
+  
+  .kontakts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:25%;
+    margin-bottom:2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+  }
+
+
+  .vardas, .pastas, .telefono, .zinute {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:10%;
+    margin-top:2%;
+  }
+
+  .vardaslabel{
+    padding:10px;
+    width: 80%;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+ }
+ 
+ .pastaslabel{
+  padding:10px;
+  width: 80%;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+ }
+
+ .telefonolabel{
+  padding:10px;
+  width: 80%;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+ }
+
+ .zinutelabel {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    height: 300px;
+    font-size: 25px;
+    margin-left:10%;
+    cursor: none;
+}
+
+.prasymas{
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:5%;
+  
+}
+.button3{
+  width: 120px;
+  height: 80px;
+  background: #CCCCCC;
+  border-radius: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-left: 65%;
+  margin-top: 2%;
+  cursor: none;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+  background-color: #7C8A9A;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.icon{
+  margin-right: 5%;
+  margin-top: 4%;
+  cursor:none;
+  
+}
+.icon div {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.icon:hover div{
+  background-color: #ddd;
+ 
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:not(.icon):hover {
+  background-color: #ddd;
+  cursor: none;
+}
+.navbar{
+
+  display:none;
+}
+
+.burger-icon {
+display: block;
+}
+
+}
+
+@media only screen and (min-width: 1001px){
+
+  .topnav{
+    display:none;
+  }
+}

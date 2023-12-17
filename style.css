@@ -1,0 +1,782 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+	cursor: none;
+}
+
+/* CURSOR */
+
+.custom-cursor {
+	position: fixed;
+  z-index: 9999;
+	top: 0;
+	left: 0;
+	display: none;
+  pointer-events: none;
+}
+
+.site-wide {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.site-wide .pointer {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: black;
+	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+.site-wide.active .pointer {
+	width: 20px;
+	height: 20px;
+}
+
+/* WRAPPER */
+
+
+/*NAVBAR*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7C8A9A;
+  padding-right: 5%;
+  position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: white;
+  cursor: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  color: black;
+  padding: 3%;
+}
+
+.navbar .nav-link:hover {
+  color: #0071B5;
+}
+
+.logo{
+  width: 10%;
+  height: auto;
+}
+
+ /*PAGRINDINIS*/
+
+.intro {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Rethink Sans', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.martynasZakrys{
+  color: black;
+  font-size: 128px;
+  word-wrap: break-word
+}
+
+.atributai{
+  color: black;
+  font-size: 40px;
+  word-wrap: break-word
+}
+
+.line{
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+}
+
+/* DARBAI */
+
+.darbai{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom:2%;
+  margin-top: 5%;
+}
+
+.nuotraukos {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 40px; /* Adjust as needed */
+  height: 800px; /* Set a fixed height for the container */
+}
+
+.mySlides {
+  display: none;
+  text-align: center; /* Center the images */
+}
+
+.mySlides img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  height: 100%; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the images horizontally */
+  transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+.mySlides:hover img {
+  transform: scale(1.2); /* Scale up by 20% on hover (adjust as needed) */
+}
+
+.mySlides:first-child {
+  display: block;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5%;
+ }
+ 
+ .buttonbackground{
+  position: absolute;
+  background: #0071B5;
+  border-radius: 60px;
+ }
+  
+.button1{
+  width: 170px;
+  height: 90px;
+  background: #CCCCCC;
+  border-radius: 60px;
+  font-family: 'Alegreya', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  border: none;
+  cursor: pointer;
+  cursor: none;
+}
+
+
+.button1:hover {
+  background-color: #BBBBBB;
+  color: #0071B5;
+  }
+
+/*APRASYMAS*/
+
+.columns{
+    column-count: 2;
+}
+  .prisistatymas {
+    display: flex;
+    align-items: center;
+    justify-content: column;
+    margin-top:10%;
+  }
+
+  .sveiki {
+    color: black;
+    font-size: 50px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom:5%;
+    margin-left:10%;
+    
+  }
+
+  .aprasymas {
+    color: black;
+    font-size: 36px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:10%;
+    margin-right:15%;
+  }
+
+  .button2{
+    width: 170px;
+    height: 90px;
+    background: #CCCCCC;
+    border-radius: 60px;
+    font-family: 'Alegreya', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 7%;
+    cursor: none;
+}
+
+  .button2:hover {
+    background-color: #BBBBBB;
+    color: #0071B5;
+  }
+
+/*SUSISIEKITE*/
+
+.susisiekite{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+
+.prasymas {
+    color: black;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:3%;
+}
+
+.kontaktai {
+    display: flex;
+
+  }
+
+  .leftcolumn {
+    flex: 1;
+    margin-left:5%;
+    margin-right:14%;
+  }
+
+  .rightcolumn {
+    flex: 1.2;
+    margin-right: 6%;
+  }
+
+  .leftcolumn1 {
+    flex: 1;
+  }
+
+ .prasymas, .vardas, .pastas, .telefono, .zinute {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    
+  }
+
+  .vardaslabel{
+    padding:20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: none;
+ }
+ 
+ .pastaslabel{
+    padding:20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: none;
+ }
+
+ .telefonolabel{
+    padding:20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: none;
+ }
+
+ .zinutelabel {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    font-size: 25px;
+    cursor: none;
+}
+
+.button3{
+  width: 170px;
+  height: 90px;
+  background: #CCCCCC;
+  border-radius: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-left: 77%;
+  margin-top: 7%;
+  cursor: none;
+}
+
+.button3:hover {
+  background-color: #BBBBBB;
+  color: #0071B5;
+  }
+
+.linefooter{
+    width: 90%;
+   height: 2px;
+   background-color: black;
+   margin-top: 10%;
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+   border-color: black;
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'inter', sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+ }
+ 
+ a {
+  text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+  
+.button4:hover {
+  background-color: #ddd;
+  color: #0071B5;
+  }
+
+  .sveiki {
+    color: black;
+    font-size: 40px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom:5%;
+    margin-left:15%;
+    margin-right:15%;
+    
+  }
+  .button4{
+    width: 120px;
+    height: 80px;
+    background: #CCCCCC;
+    border-radius: 60px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-left: 70%;
+    margin-top: 2%;
+    cursor: none;
+  }
+
+  .aprasymas {
+    color: black;
+    font-size: 25px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:10%;
+    margin-right:15%;
+    margin-left:15%;
+  }
+
+
+  .kontaktai {
+    display: none;
+  }
+ 
+  .dirbkime1{
+  text-align:center;
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:3%;
+    
+  }
+.prasymas1{
+  text-align:center;
+  color: black;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:3%;
+    margin-bottom:5%;
+}
+
+.prasymas {
+  color: black;
+  font-size: 36px;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left:3%;
+  margin-bottom:5%;
+}
+
+.priePC{
+display:none;
+}
+
+.vardaslabel1{
+  padding:1%;
+  width: 90%;
+  font-size: 20px;
+  cursor: none;
+  margin-left:5%;
+}
+
+.pastaslabel1{
+  padding:1%;
+  width: 90%;
+  font-size: 25px;
+  cursor: none;
+  margin-left:5%;
+}
+
+.telefonolabel1{
+  padding:1%;
+  width: 90%;
+  font-size: 25px;
+  cursor: none;
+  margin-left:5%;
+}
+
+.zinutelabel1 {
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  height: 300px;
+  font-size: 25px;
+  cursor: none;
+  margin-left:5%;
+}
+
+.vardas1, .pastas1, .telefono1, .zinute1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left:5%;
+  margin-bottom:2%;
+  margin-top:2%;
+}
+
+.button2{
+  width: 120px;
+  height: 80px;
+  background: #CCCCCC;
+  border-radius: 60px;
+  font-family: 'Alegreya', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-left: 43%;
+  margin-top: 15%;
+  cursor: none;
+}
+
+.button1{
+  width: 120px;
+    height: 80px;
+    background: #CCCCCC;
+  border-radius: 60px;
+  font-family: 'Alegreya', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-top: 15%;
+  cursor: none;
+}
+.slideshow-container{
+  margin-left:10%;
+  margin-right:10%;
+
+}
+
+
+.martynasZakrys{
+  color: black;
+  font-size: 90px;
+  font-weight: 500;
+  word-wrap: break-word
+  }
+  
+  .atributai{
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  word-wrap: break-word
+  }
+  
+  .nuotraukos {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 600px; /* Set a fixed height for the container */
+  }
+
+  .logo{
+    width: 20%;
+    height: auto;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    background-color: #7C8A9A;
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .icon{
+    margin-right: 5%;
+    margin-top: 4%;
+    cursor:none;
+    
+  }
+  .icon div {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .icon:hover div{
+    background-color: #ddd;
+   
+  }
+
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:not(.icon):hover {
+    background-color: #ddd;
+    cursor: none;
+  }
+  
+.navbar{
+
+    display:none;
+  }
+
+
+.vardaslabel{
+  padding:20%;
+  width: 90%;
+  font-size: 25px;
+  cursor: none;
+  margin-left:5%;
+}
+
+.pastaslabel{
+  padding:20px;
+  width: 90%;
+  font-size: 25px;
+  cursor: none;
+  margin-left:5%;
+}
+
+.telefonolabel{
+  padding:20px;
+  width: 90%;
+  font-size: 25px;
+  cursor: none;
+  margin-left:5%;
+}
+
+.zinutelabel {
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  height: 300px;
+  font-size: 25px;
+  cursor: none;
+  margin-left:5%;
+}
+
+}
+
+@media only screen and (min-width: 1001px){
+
+  .button4{
+    display:none;
+  }
+  .topnav{
+    display:none;
+  }
+
+  .dirbkime1{
+    display:none;
+  }
+
+  .prasymas1{
+    display:none;
+  }
+  .vardas1, .pastas1, .telefono1, .zinute1 {
+    display:none;
+  }
+
+  .vardaslabel1{
+    display:none;
+  }
+  
+  .pastaslabel1{
+    display:none;
+  }
+  
+  .telefonolabel1{
+    display:none;
+  }
+  
+  .zinutelabel1{
+    display:none;
+  }
+
+
+.dirbkime {
+    color: black;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:3%;
+}
+
+.prasymas {
+    color: black;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left:3%;
+}
+
+.kontaktai {
+    display: flex;
+
+  }
+
+  .leftcolumn {
+    flex: 1;
+  }
+
+  .rightcolumn {
+    flex: 1.2;
+    margin-right: 6%;
+  }
+
+  .leftcolumn1 {
+    flex: 1;
+  }
+
+  /* Add additional styling as needed */
+ .vardas, .pastas, .telefono, .zinute {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .vardaslabel{
+    padding:20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: none;
+ }
+ 
+ .pastaslabel{
+    padding:20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: none;
+ }
+
+ .telefonolabel{
+    padding:20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: none;
+ }
+
+ .zinutelabel {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    font-size: 25px;
+    cursor: none;
+}
+}
